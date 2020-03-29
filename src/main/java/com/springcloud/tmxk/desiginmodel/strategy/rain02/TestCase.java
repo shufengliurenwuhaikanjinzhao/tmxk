@@ -16,10 +16,9 @@ import java.util.Arrays;
  **/
 public class TestCase extends junit.framework.TestCase {
     private static Logger logger = LoggerFactory.getLogger(TestCase.class);
-    @Autowired(required = false)
-    private Sorter sorter;
 
     public void testApp() {
+        Sorter sorter= new Sorter<User>();
         User[] users = {new User(1, 1),
                 new User(1, 2),
                 new User(3, 2),

@@ -5,10 +5,10 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @Author Rain
- * @Date 2020/3/28 18:17
+ * @Date 2020/3/29 11:28
  * @Description TODO
  **/
-public class AtomicInteger {
-    private static Logger logger = LoggerFactory.getLogger(AtomicInteger.class);
-    
+public class AtomicInteger02 {
+    private static Logger logger = LoggerFactory.getLogger(AtomicInteger02.class);
+
 }

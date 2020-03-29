@@ -4,6 +4,7 @@ import com.springcloud.tmxk.desiginmodel.strategy.Comparable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @ClassName Sorter
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
  * @Version 1.0
  * @Deacription TODO
  **/
-@Component
+@Service
 public class Sorter<T> {
     private static Logger logger = LoggerFactory.getLogger(Sorter.class);
 
