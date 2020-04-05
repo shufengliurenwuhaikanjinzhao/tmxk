@@ -224,9 +224,15 @@ public class AppTest extends TestCase {
        list.add(1);
        list.add(4);
        list.add(3);
-       list.add(2);
-
-        System.out.println(list.toString());
+       list.add(3);
+//        HashSet linkedList = new HashSet(list);
+//        list = new ArrayList(linkedList);
+        HashSet linkedList = new HashSet();
+        linkedList.add(3);
+        linkedList.add(3);
+        linkedList.add(5);
+        System.out.println(linkedList.toString().replace("[",
+                "").replace("]",""));
     }
 
 
@@ -237,7 +243,7 @@ public class AppTest extends TestCase {
         map.put(2,list);
         list.add(1);
         list.add(4);
-        list.add(3);
+        list.add(2);
         list.add(2);
 
         System.out.println(map);
