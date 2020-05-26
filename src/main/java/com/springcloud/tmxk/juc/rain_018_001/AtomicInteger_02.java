@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
  * @Date 2020/3/29 11:28
  * @Description TODO
  **/
-public class AtomicInteger02 {
-    private static Logger logger = LoggerFactory.getLogger(AtomicInteger02.class);
+public class AtomicInteger_02 {
+    private static Logger logger = LoggerFactory.getLogger(AtomicInteger_02.class);
 
 }

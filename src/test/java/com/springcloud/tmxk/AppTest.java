@@ -1,7 +1,9 @@
 package com.springcloud.tmxk;
 
+import com.springcloud.tmxk.XStream.User;
 import junit.framework.TestCase;
 import lombok.Data;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -247,6 +249,39 @@ public class AppTest extends TestCase {
         list.add(2);
 
         System.out.println(map);
+    }
+
+    public void testApp21() {
+        Map<String,String> map = new HashMap();
+        String name = map.get("xx");
+        if (StringUtils.isBlank(name)){
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
+    }
+    public void testApp22() {
+        Map<String,String> map = null;
+        String flag="true";
+        xx(flag,map);
+        System.out.println(flag);
+    }
+
+    private boolean xx(String flag, Map<String,String> map){
+        map = new HashMap<String,String>();
+        map.put("xx","xx");
+        flag = "false";
+        return false;
+    }
+    public void testApp23() {
+        System.out.println(com.springcloud.tmxk.XStream.User.class.getName());
+        try {
+            Class<?> aClass = Class.forName("com.springcloud.tmxk.XStream.User."+"User");
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
     }
 }
 
