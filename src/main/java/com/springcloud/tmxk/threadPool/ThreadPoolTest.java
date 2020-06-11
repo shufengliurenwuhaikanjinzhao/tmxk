@@ -25,7 +25,7 @@ import java.util.concurrent.*;
 public class ThreadPoolTest {
     public static void main(String[] args) {
         System.out.println(Runtime.getRuntime().availableProcessors());
-
+        ExecutorService threadPool3 = Executors.newCachedThreadPool();//自动增加线程
         ExecutorService threadPool = new ThreadPoolExecutor(
                 2,
                 5,
@@ -36,7 +36,7 @@ public class ThreadPoolTest {
                 new ThreadPoolExecutor.CallerRunsPolicy());
         try {
             for (int i = 0; i < 11; i++) {
-                threadPool.execute(()->{
+                threadPool3.execute(()->{
                     System.out.println(Thread.currentThread().getName()+"\t"+"办理业务");
                 });
             }

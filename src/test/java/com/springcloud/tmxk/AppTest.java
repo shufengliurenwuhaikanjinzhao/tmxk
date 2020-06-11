@@ -6,6 +6,8 @@ import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -282,6 +284,74 @@ public class AppTest extends TestCase {
             e.printStackTrace();
         }
 
+    }
+    public void testApp24() {
+        ExecutorService threadPool3 = Executors.newCachedThreadPool();//自动增加线程
+
+        try {
+            for (int i = 0; i < 10; i++) {
+                for (int j = 0; j < 1000; i++) {
+                    threadPool3.execute(() -> {
+                        System.out.println(Thread.currentThread().getName() + "\t" + "办理业务");
+                    });
+                }
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            threadPool3.shutdown();
+        }
+    }
+
+    public void testApp245() {
+        User user = new User(1L,"xx",2);
+        User user2 = new User(2L,"xx",2);
+        User user3 = new User(2L,"xx",2);
+        User user4 = new User(1L,"xx",1);
+
+       List list = Arrays.asList(user,user2,user3,user4);
+        list = new ArrayList<String>(new LinkedHashSet<>(list));
+//        list.forEach(System.out::println);
+        Set set = new LinkedHashSet<>(list);
+        set.addAll(list);
+        System.out.println(set.toArray().);
+        Iterator iterator = set.iterator();
+
+        while (iterator.hasNext())
+        {
+            System.out.println(iterator.next());
+        }
+
+    }
+    public void testApp26() {
+        User user = new User(1L,"xx",2);
+        User user2 = new User(2L,"xx",2);
+        User user3 = new User(2L,"xx",2);
+        User user4 = new User(1L,"xx",1);
+        List<User> list = Arrays.asList(user,user2,user3,user4);
+        list = new ArrayList<User>(new LinkedHashSet<User>(list));
+        Iterable<User> iterable = new ArrayList<>();
+        iterable.forEach((Consumer<? super User>) list);
+
+        iterable.forEach((user1)->{
+            System.out.println(user1.toString());
+        });
+       
+
+    }
+
+
+    public void testApp27() {
+      List<String> list = new ArrayList(Arrays.asList("1","2","3","5"));
+      List<String> list1 = new ArrayList(Arrays.asList("1","2","3","4"));
+
+        boolean b = list1.removeAll(list);
+      list1.forEach((x)->{
+         System.out.println(x);
+      });
+        String[] objects = list1.toArray(new String[list1.size()]);
+
+        System.out.println(objects[0]);
     }
 }
 
