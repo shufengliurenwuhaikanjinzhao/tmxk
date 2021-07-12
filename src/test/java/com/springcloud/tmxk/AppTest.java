@@ -314,7 +314,7 @@ public class AppTest extends TestCase {
 //        list.forEach(System.out::println);
         Set set = new LinkedHashSet<>(list);
         set.addAll(list);
-        System.out.println(set.toArray().);
+        System.out.println(set.toArray());
         Iterator iterator = set.iterator();
 
         while (iterator.hasNext())
