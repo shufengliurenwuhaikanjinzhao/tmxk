@@ -353,5 +353,9 @@ public class AppTest extends TestCase {
 
         System.out.println(objects[0]);
     }
+    public void testApp28() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(1);
+    }
 }
 
