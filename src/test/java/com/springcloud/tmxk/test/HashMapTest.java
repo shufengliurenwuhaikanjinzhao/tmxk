@@ -1,6 +1,8 @@
 package com.springcloud.tmxk.test;
 
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 
@@ -11,9 +13,12 @@ import java.util.HashMap;
  * @Version 1.0
  * @Deacription TODO
  **/
+@Service
 public class HashMapTest extends HashMap {
-    @Autowired
-    private AppTest appTest;
+
+    public static void main(String[] args) {
+        HashMap map = new HashMap();
 
 
+    }
 }

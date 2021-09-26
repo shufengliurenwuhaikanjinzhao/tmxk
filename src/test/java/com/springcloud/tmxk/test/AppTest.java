@@ -8,6 +8,7 @@ import com.thoughtworks.xstream.XStream;
 import junit.framework.TestCase;
 import org.assertj.core.util.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
@@ -18,6 +19,7 @@ import java.util.*;
  * @Date 2019/11/2 11:27
  * @Version 1.0
  **/
+@Service
 public class AppTest extends TestCase {
     @Autowired
     private HashMapTest hashMapTest;
