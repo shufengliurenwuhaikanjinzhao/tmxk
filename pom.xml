@@ -53,32 +53,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-            <version>5.9.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-            <version>4.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>2.1.6.RELEASE</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
-        <!--<dependency>-->
-        <!--<groupId>org.redisson</groupId>-->
-        <!--<artifactId>redisson</artifactId>-->
-        <!--<version>3.11.5</version>-->
-        <!--</dependency>-->
-        <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
             <version>1.4.10</version>
@@ -112,38 +86,11 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.alidaodao.app</groupId>
-            <artifactId>spring-boot-redis-starter</artifactId>
-            <version>1.22.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.springcloud</groupId>
-            <artifactId>tmxk</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>2.3.9.RELEASE</version>
-        </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>com.github.xiaoymin</groupId>-->
-        <!--            <artifactId>knife4j-spring-boot-starter</artifactId>-->
-        <!--            &lt;!&ndash;在引用时请在maven中央仓库搜索最新版本号&ndash;&gt;-->
-        <!--            <version>2.0.2</version>-->
-        <!--        </dependency>-->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>3.6.1</version>
-        </dependency>
-        <!-- activemq 的jar配置 -->
-        <dependency>
+<!--        <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-all</artifactId>
             <version>5.16.2</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.apache.xbean</groupId>
             <artifactId>xbean-spring</artifactId>
@@ -154,16 +101,40 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>2.3.12.RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.transaction -->
+     <!--   <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>org.springframework.transaction</artifactId>
+            <version>3.1.2.RELEASE</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>2.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.emilianobonassi/jpbc -->
+<!--        <dependency>
+            <groupId>com.github.emilianobonassi</groupId>
+            <artifactId>jpbc</artifactId>
+            <version>2.0.0</version>
+        </dependency>-->
+
     </dependencies>
 
-    <build>
+<!--    <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
     <repositories>
         <repository>
             <id>central</id>

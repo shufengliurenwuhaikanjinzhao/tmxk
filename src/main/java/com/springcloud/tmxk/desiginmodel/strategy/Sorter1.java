@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
  * @Deacription TODO
  **/
 @Component
-public class Sorter {
-    private static Logger logger = LoggerFactory.getLogger(Sorter.class);
+public class Sorter1 {
+    private static Logger logger = LoggerFactory.getLogger(Sorter1.class);
 
     public static void sort(Comparable[] arr) {
         for (int i = 0; i < arr.length; i++) {

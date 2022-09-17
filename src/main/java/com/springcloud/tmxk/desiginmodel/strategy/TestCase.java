@@ -16,7 +16,7 @@ import java.util.Arrays;
 public class TestCase extends junit.framework.TestCase {
     private static Logger logger = LoggerFactory.getLogger(TestCase.class);
     @Autowired
-    private Sorter sorter;
+    private Sorter1 sorter;
 
     public void testApp() {
         RainComparable[] rain = {new RainComparable(1, 1),

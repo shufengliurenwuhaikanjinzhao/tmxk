@@ -354,8 +354,35 @@ public class AppTest extends TestCase {
         System.out.println(objects[0]);
     }
     public void testApp28() {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(1);
+        HashMap map = new HashMap();
+        map.put("xx","yy");
+
+        map.get("xx");
+        System.out.printf(map.get("xx").toString());
+
+        Float.isNaN(0.75f);
     }
+
+    public static boolean isNaN(float v) {
+        return (v != v);
+    }
+
+    public void testApp29() {
+        HashMap map = new HashMap();
+        String key ="唐宏雷";
+        int hashCode = key.hashCode();
+        int index = (1<<4 - 1) & hashCode;
+        System.out.println(index);//8
+        System.out.println(hashCode);//21691992
+        Long l = new Long(1L);
+        Long l1 = new Long(1L);
+
+        System.out.println(l.equals(l1));
+        System.out.println(l==l1);
+    }
+
+
+
+
 }
 

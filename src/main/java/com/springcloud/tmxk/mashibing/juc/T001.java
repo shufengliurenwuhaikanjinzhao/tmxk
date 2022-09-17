@@ -1,6 +1,5 @@
 package com.springcloud.tmxk.mashibing.juc;
 
-import org.springframework.data.redis.core.StringRedisTemplate;
 
 /**
  * @ClassName T001

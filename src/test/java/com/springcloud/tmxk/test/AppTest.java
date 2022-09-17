@@ -6,7 +6,6 @@ import com.springcloud.tmxk.entity.Person;
 import com.springcloud.tmxk.entity.User;
 import com.thoughtworks.xstream.XStream;
 import junit.framework.TestCase;
-import org.assertj.core.util.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

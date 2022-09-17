@@ -1,6 +1,10 @@
 package com.springcloud.tmxk.classLoader;
 
 
+import org.apache.commons.collections.ListUtils;
+import org.assertj.core.util.Lists;
+import org.springframework.util.CollectionUtils;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.Enumeration;
@@ -37,6 +41,12 @@ public class MyTest14 {
 //sun.misc.Launcher$AppClassLoader@18b4aac2
 
         //String是由启动类加载 在rt.jar包中 BootstrapClassLoader
+
+
+
+
+
+
     }
 }
 
